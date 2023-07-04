@@ -29,5 +29,14 @@ def display_visual(car):
 
 # Call the accelerate method five times. 
 # After each call to the accelerate method, get the current speed of the car and display it. 
+def main():
+    car = Car("2023", "Ford Mustang")
+
+    print(colored("\nAccelerating...", "green"))
+    for _ in range(5):
+        car.accelerate()
+        display_visual(car)
+        time.sleep(1)
+
 # Call the brake method five times. 
 # After each call to the brake method, get the current speed of the car and display it.
