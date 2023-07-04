@@ -2,6 +2,7 @@
 from Car_Class import Car
 import time
 from termcolor import colored
+
 class TestCar:
     def display_speed(self):
         speed = self.get_speed()
@@ -22,7 +23,7 @@ def display_visual(car):
         print(colored("    ______", "yellow"))
         print(colored(" __/|___|__\\___", "yellow"))
         print(colored("|______________|", "yellow"))
-        print(colored("|    STOPPED   |", "yellow"))
+        print(colored("| STOPPED 0 mph|", "yellow"))
         print(colored("|______________|", "yellow"))
         print(colored("   (x)    (x)", "yellow"))
 
@@ -40,3 +41,11 @@ def main():
 
 # Call the brake method five times. 
 # After each call to the brake method, get the current speed of the car and display it.
+    print(colored("\nBraking...", "red"))
+    for _ in range(5):
+        car.brake()
+        display_visual(car)
+        time.sleep(1)
+
+if __name__ == "__main__":
+    main()
