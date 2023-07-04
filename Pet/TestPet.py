@@ -1,0 +1,1 @@
+# Write a program that creates an object of the class and prompts the user to enter the name, type, and age of his or her pet.
