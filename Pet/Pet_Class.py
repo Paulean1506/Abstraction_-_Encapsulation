@@ -4,3 +4,8 @@
 # _ _name (for the name of a pet)
 # _ _animal_type (for the type of animal that a pet is. Example values are ‘Dog’, ‘Cat’, and ‘Bird’)
 # _ _age (for the pet’s age)
+class Pet:
+    def __init__(self):
+        self.__name = ""
+        self.__animal_type = ""
+        self.__age = ""
