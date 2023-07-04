@@ -26,7 +26,7 @@ def main():
     pet.set_age(input("Age: "))
 
     print(colored("\nPet Details:", "cyan"))
-    display_visual(pet)
+     display_visual(pet)
 
 if __name__ == "__main__":
     main()
